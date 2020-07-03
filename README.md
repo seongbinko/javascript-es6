@@ -1,7 +1,7 @@
 # 자바스크립트 es6 문법 배우기
+> 드림코딩 by 엘리 유투브를 보고 정리한 javascript 문법입니다. index.html에 js파일을 include하여 학습하였습니다.
 
-### 드림코딩 by 엘리 유투브를 보고 정리한 javascript 문법입니다. index.html에 js파일을 include하여 학습하였습니다.
----
+## 목차
 1. 자바스크립트의 역사와 현재 그리고 미래 (JavaScript, ECMAScript, JQuery, Babel, Node.js)
 
 2. 콘솔에 출력, script async 와 defer의 차이점 및 앞으로 자바스크립트 공부 방향 | ES5+

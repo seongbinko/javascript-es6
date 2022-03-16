@@ -51,6 +51,12 @@ class UserStorage {
   }
 }
 
+/**
+ * 콜백의 문제점
+ * 1. 가독성이 떨어짐
+ * 2. 디버깅이 어렵고 유지보수가 어려워짐
+ * @type {UserStorage}
+ */
 const userStorage = new UserStorage();
 const id = prompt("enter your id");
 const password = prompt("enter your password");

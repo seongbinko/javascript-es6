@@ -1,7 +1,8 @@
 //async & await
 // clear style of using promise :)
+// promise를 간결하고 동기적으로 처리하는 것 처럼 보이게 하는 문법 (syntactic sugar)
 
-// 1. async
+// 1. async / return new Promise()의 과정을 async로 생략할 수 있다.
 async function fetchUser() {
   // do network request in 10 secs....
   return "ellie";
@@ -18,16 +19,16 @@ function delay(ms) {
 
 async function getApple() {
   await delay(1);
-
-  return "apple";
+  return "🍎";
 }
 
 async function getBanana() {
   await delay(2000);
-  return "banana";
+  return "🍌";
 }
 function getBanana() {
-  return delay(1000).then(() => "banana");
+  return delay(1000)
+  .then(() => "🍌");
 }
 // function pickFruits() {
 //   return getApple().then((apple) => {
@@ -55,11 +56,10 @@ pickFruits().then(console.log);
 
 // 3. useful promise Apis
 function pickAllFruits() {
-  return Promise.all([getApple(), getBanana()]).then((fruits) =>
-    fruits.join(" + ")
+  return Promise.all([getApple(), getBanana()])
+    .then((fruits) => fruits.join(" + ")
   );
 }
-
 pickAllFruits().then(console.log);
 
 function pickOnlyOne() {
